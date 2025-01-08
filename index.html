@@ -3,9 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Modal</title>
   </head>
   <body>
+    <div class="h-screen flex justify-center items-center relative">
+      <button class="openBtn block bg-violet-500 px-6 py-3 rounded text-white">
+        Open modal
+      </button>
+      <div
+        class="modalBox h-screen w-full bg-black/60 z-10 top-0 absolute justify-center hidden"
+      >
+        <div
+          class="min-w-40 h-60 flex flex-col justify-center items-center mt-40 bg-white rounded px-5 py-3 gap-6 mx-6"
+        >
+          <h1 class="text-2xl md:text-3xl font-semibold">Modal Popup</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est,
+            dolores!
+          </p>
+          <button
+            class="closeBtn block bg-red-600 px-6 py-3 rounded text-white"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="h-screen"></div>
+
+    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
